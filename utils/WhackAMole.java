@@ -20,10 +20,6 @@ class row {
 	
 }
 public class WhackAMole   {
-	
-
-
-
 private content_styling styling;
 public 	int score; 
 public 	int  molesleft; 
@@ -107,16 +103,16 @@ public ArrayList<row> moleGrid;
     }
     
     public void reset( Button reset){ 
-    	reset.setOnMouseClicked(new EventHandler<MouseEvent>() {
+    	    reset.setOnMouseClicked(new EventHandler<MouseEvent>() {
 
 			@Override
 			public void handle(MouseEvent event) {
 				// TODO Auto-generated method stub
- 				 reset();
+ 				    reset();
 				   Alert alert= new Alert(AlertType.WARNING); 
 	        	   alert.setTitle("Game Over");
 	        	   alert.setContentText("Game is Over");
-	        		 alert.show(); 
+	        	   alert.show(); 
 		
 			}  
 			});
@@ -135,7 +131,7 @@ public ArrayList<row> moleGrid;
    		   }
     		   
 	   }		   
-      printgrid();
+    printgrid();
     	
     }
     
@@ -161,13 +157,6 @@ public ArrayList<row> moleGrid;
 		attemptsleft=5;
 		modify();
    }
-   
-  
-  public void reset_timer() {
-	  
-	  
-	  
-  }
    }
  
 

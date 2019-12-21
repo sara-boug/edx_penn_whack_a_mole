@@ -1,9 +1,6 @@
 package Draw;
 import utils.WhackAMole;
 import style.content_styling;
-
-import com.sun.prism.paint.Color;
-
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -73,14 +70,13 @@ public class main extends Application  {
 
    }
         
-      public   void   reptetive_actions() {
+      public void reptetive_actions() {
 	   moles_left.setText(Integer.toString(whackamole.molesleft));
 	   attempts_left.setText(Integer.toString(whackamole.attemptsleft)); 
        whackamole.review(gameover);
        game= whackamole.review(gameover);
        if( game){ 
- 	      System.out.print("nooooo");
-         whackamole.reset();
+          whackamole.reset();
          gameover.show();
          } 
       }

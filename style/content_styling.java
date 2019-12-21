@@ -9,10 +9,7 @@ import javafx.scene.layout.VBox;
 
 public class content_styling {
 
-	public content_styling() {
-		// TODO Auto-generated constructor stub
-	}
-	
+
 	public void vbox(VBox vbox) { 
 	     vbox.setSpacing(10);
           vbox.setPadding(new Insets(10,30,70,30));
@@ -42,13 +39,9 @@ public class content_styling {
  				+ "-fx-text-fill:black;"
 				+ "-fx-font-size:20px;"
  				);
- 		
- 	 
-	}
+ 			}
 	
 	public void mole_button(Button button) { 
-		
-		
 		button.setStyle("-fx-background-image: url('https://icon-library.net/images/mole-icon/mole-icon-5.jpg');"+
 				   "-fx-background-color:black;"
 		    +"-fx-background-radius:100%;" 
@@ -66,33 +59,5 @@ public class content_styling {
  				+ "-fx-min-height:60px;"
 				+"-fx-min-width:520px;"
  				+ "-fx-text-fill:white"); 
-
-		
-		
-	}
-	
-	
-	public void review( Button review) { 
-		
-		review.setStyle("-fx-background-color:#D3D3D3;"  
-  				+"-fx-min-width:520px;"
- 				+ "-fx-text-fill:white;"
- 				+ "-fx-font-size:25px;"); 
-
-		
-	  }
-	public void review_game_over( Button review) { 
-		
-		review.setStyle("-fx-background-color:red;"
- 				+"-fx-min-width:520px;"
- 				+ "-fx-text-fill:white;"
- 				+ "-fx-font-size:25px;"); 
-
-		
-	  }
-	
-
-	
-	
-
-}
+     	}
+ }
